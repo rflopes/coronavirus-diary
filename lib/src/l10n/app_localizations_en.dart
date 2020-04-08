@@ -205,7 +205,7 @@ If this is all OK and you are 18 years old or older, please click \"I agree\". O
 
   @override
   String get shareAppDownloadPrompt =>
-      'Download this app to view local COVID-19 statistics and support the community by anonymously reporting your symptoms: APP_LINK';
+      'Download this app to view local COVID-19 statistics and support the community by anonymously reporting your symptoms: {{ APP_LINK }}';
 
   @override
   String get shareAppTitle => 'Support Your Community';

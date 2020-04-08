@@ -256,9 +256,9 @@
     "description": "Tooltip for the back button"
   },
 
-  "shareAppDownloadPrompt": "Download this app to view local COVID-19 statistics and support the community by anonymously reporting your symptoms: APP_LINK",
+  "shareAppDownloadPrompt": "Download this app to view local COVID-19 statistics and support the community by anonymously reporting your symptoms: {{ APP_LINK }}",
   "@shareAppDownloadPrompt": {
-    "description": "Prompt for the app sharing sheet, see https://pub.dev/packages/share. The APP_LINK word should not be translated, it will be replaced by a link the app at runtime"
+    "description": "Prompt for the app sharing sheet, see https://pub.dev/packages/share. The {{ APP_LINK }} word should not be translated, it will be replaced by a link the app at runtime"
   },
 
   "shareAppTitle": "Support Your Community",

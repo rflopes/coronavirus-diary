@@ -246,7 +246,7 @@ abstract class AppLocalizations {
   // Tooltip for the back button
   String get systemReportBackToHomePage;
 
-  // Prompt for the app sharing sheet, see https://pub.dev/packages/share. The APP_LINK word should not be translated, it will be replaced by a link the app at runtime
+  // Prompt for the app sharing sheet, see https://pub.dev/packages/share. The {{ APP_LINK }} word should not be translated, it will be replaced by a link the app at runtime
   String get shareAppDownloadPrompt;
 
   // Title for the app sharing sheet, see https://pub.dev/packages/share

@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/fa_icon.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:share/share.dart';
 
 import 'package:covidnearme/src/l10n/app_localizations.dart';
+import 'package:covidnearme/src/utils/share.dart';
 
 class ShareApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final AppLocalizations localizations = AppLocalizations.of(context);
-
-    void _shareApp() {
-      Share.share(localizations.shareAppDownloadPrompt);
-    }
 
     return Container(
       color: Colors.white.withOpacity(0.2),
@@ -52,7 +48,7 @@ class ShareApp extends StatelessWidget {
             width: double.infinity,
             child: RaisedButton(
               key: ValueKey<String>('SHARE NOW'),
-              onPressed: _shareApp,
+              onPressed: () => shareApp(context),
               child: Text(localizations.shareAppNow),
             ),
           ),

@@ -34,7 +34,8 @@ void main() {
 
     // If still need to accept the consent, agree.
     if (consent) {
-      await driver.tap(find.byValueKey('symptomReportInformedConsentAcceptButton'));
+      await driver
+          .tap(find.byValueKey('symptomReportInformedConsentAcceptButton'));
     }
 
     // Enter a location and continue
